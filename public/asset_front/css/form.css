@@ -1,0 +1,464 @@
+.mybtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: dodgerblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6), 0 0 6px rgba(0, 0, 0, .4);
+    cursor: pointer;
+    transition: all 400ms;
+    font-weight: 600;
+    font-family: Poppins-SemiBold;
+    color: #dddddd;
+    background: -webkit-linear-gradient(0deg, midnightblue, hotpink);
+}
+.mybtn_reverse{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: dodgerblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6), 0 0 6px rgba(0, 0, 0, .4);
+    cursor: pointer;
+    transition: all 400ms;
+    font-weight: 600;
+    font-family: cursive;
+    color: #dddddd;
+    background: -webkit-linear-gradient(0deg, hotpink, midnightblue);
+}
+.mybtn:hover {
+    background-color: steelblue;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .8);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    color: #ffffff;
+    animation: shake 400ms ease-in-out forwards;
+}
+.mybtn_reverse:hover {
+    background-color: steelblue;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .8);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    color: #ffffff;
+    animation: shake 400ms ease-in-out forwards;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0px);
+    }
+
+    40% {
+        transform: translateX(-6px);
+    }
+
+    60% {
+        transform: translateX(4px);
+    }
+
+    80% {
+        transform: translateX(-4px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.rowss {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 10px 0;
+
+    position: relative;
+}
+
+/*
+.collss {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+}
+*/
+.rowss .collss {
+    flex: 1;
+    flex-wrap: wrap;
+    width: calc(100% - 16px);
+
+    position: relative;
+}
+
+.center_text {
+    text-align: center;
+}
+
+.rowss .collss input[type="text"] {
+    flex: 1;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.rowss > label{
+    margin: 0;
+    padding: 0 6px;
+    color: #4d4d4d;
+    font-size: 14px;
+}
+
+.rowss > .collss > label{
+    margin: 0;
+    padding: 0 6px;
+    color: #4d4d4d;
+    font-size: 14px;
+}
+
+.my_forms {
+    min-width: 320px;
+    max-width: 340px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: rgba(255,255,255,.8);
+    border: 2px solid rgba(0, 90, 156, .4);
+    border-bottom: 10px solid #eeeeee;
+    border-top: 10px solid #eeeeee;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    font-size: 12px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .4), inset 0 0 20px rgba(0, 0, 0, .4);
+    animation: intro 400ms ease-in-out forwards;
+
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes intro {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    70% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.my_forms h2 {
+    color: dodgerblue;
+    /* Gradient text */
+    background: -webkit-linear-gradient(45deg, dodgerblue, midnightblue, hotpink, hotpink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+}
+
+.my_forms input[type="text"],
+.my_forms input[type="email"],
+.my_forms input[type="password"] {
+    padding: 0 6px!important;
+    border: 1px solid transparent;
+    border-bottom: 2px solid rgba(31, 144, 255, 1);
+    margin: 0!important;
+    transition: all 400ms;
+    width: 100%;
+    font-size: 14px;
+    color: #666666;
+}
+
+.label_pass {
+    position: absolute;
+    right: 0;
+}
+
+#lgo_eye {
+    position: relative;
+    right: 2px;
+    top: 12px;
+    font-size: 16px !important;
+    cursor: pointer;
+    color: #ccc;
+    padding: 4px;
+}
+
+.sign_up_eye {
+    right: 0 !important;
+}
+
+#lgo_eye:hover {
+    color: #999999;
+}
+
+#lgo_eye.active_eye {
+    color: hotpink;
+}
+
+.my_forms input[type="checkbox"] {
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 0 10px dodgerblue, 0 0 2px dodgerblue, inset 0 0 10px dodgerblue;
+    transition: all 400ms;
+}
+
+.my_forms input[type="checkbox"]:checked {
+    box-shadow: 0 0 10px hotpink, 0 0 2px deeppink, inset 0 0 10px hotpink;
+}
+
+.my_forms .GenderRadio {
+    margin: 0 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.my_forms .GenderRadio span input[type="radio"] {
+    display: none;
+    cursor: pointer;
+    color: dodgerblue;
+    box-shadow: 0 0 10px dodgerblue, 0 0 2px dodgerblue, inset 0 0 10px dodgerblue;
+}
+
+/*
+.forms .GenderRadio span:nth-child(1) input[type="radio"]:checked{
+    box-shadow: 0 0 10px midnightblue, 0 0 2px deeppink, inset 0 0 10px midnightblue;
+}
+.forms .GenderRadio span:nth-child(2) input[type="radio"]:checked{
+    box-shadow: 0 0 10px hotpink, 0 0 2px deeppink, inset 0 0 10px hotpink;
+}
+*/
+.my_forms .GenderRadio span #male:checked {
+    box-shadow: 0 0 10px midnightblue, 0 0 2px deeppink, inset 0 0 10px midnightblue;
+}
+
+.my_forms .GenderRadio span #female:checked {
+    box-shadow: 0 0 10px hotpink, 0 0 2px deeppink, inset 0 0 10px hotpink;
+}
+
+.Remember_lbl {
+    cursor: pointer;
+}
+
+.my_forms input[type="text"]:focus,
+.my_forms input[type="email"]:focus,
+.my_forms input[type="date"]:focus,
+.my_forms input[type="password"]:focus {
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    border-bottom: 2px solid hotpink;
+    animation: borders 800ms ease-in-out infinite;
+}
+
+.my_forms input[type="text"].Err,
+.my_forms input[type="email"].Err,
+.my_forms input[type="date"].Err,
+.my_forms input[type="password"].Err {
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    border-bottom: 2px solid red;
+}
+
+
+@keyframes borders {
+    from {
+        border-radius: 20px;
+        border-bottom: 2px solid hotpink;
+    }
+
+    50% {
+        border-radius: 0;
+        border-bottom: 2px solid dodgerblue;
+    }
+
+    to {
+        border-radius: 20px;
+        border-bottom: 2px solid hotpink;
+    }
+}
+
+.my_forms input[type="date"] {
+    padding: 2px 10px;
+    border: 1px solid transparent;
+    border-bottom: 2px solid dodgerblue;
+    transition: all 400ms;
+}
+
+.date {
+    margin-left: 10px;
+}
+
+.Gender_icon {
+    font-size: 22px;
+    color: #cccccc;
+    padding: 0 10px;
+    transition: 400ms;
+    display: block;
+    text-align: center;
+    line-height: 28px;
+}
+
+.my_forms .GenderRadio span #male:checked ~ .Gender_icon {
+    color: midnightblue;
+    text-shadow: 0 0 6px rgba(25, 25, 255, .6);
+    transform: rotate(360deg);
+    /* Gradient text */
+    background: -webkit-linear-gradient(-90deg, midnightblue, hotpink, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /*animation: jump 400ms ease-in-out infinite;*/
+}
+
+.my_forms .GenderRadio span #male:checked ~ .Gender_text {
+    color: midnightblue;
+    text-shadow: 0 0 6px rgba(25, 25, 255, .4);
+    background: -webkit-linear-gradient(-90deg, midnightblue, hotpink, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.my_forms .GenderRadio span #female:checked ~ .Gender_icon {
+    color: hotpink;
+    text-shadow: 0 0 6px rgba(255, 25, 25, .6);
+    transform: rotate(360deg);
+    /* Gradient text */
+    background: -webkit-linear-gradient(-90deg, red, hotpink, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /*animation: jump2 400ms ease-in-out infinite;*/
+}
+
+.my_forms .GenderRadio span #female:checked ~ .Gender_text {
+    color: hotpink;
+    text-shadow: 0 0 6px rgba(255, 25, 25, .4);
+    background: -webkit-linear-gradient(-90deg, red, hotpink, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-6px);
+    }
+
+    60% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes jump2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-4px);
+    }
+
+    60% {
+        transform: translateY(-2px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+.Errortxt {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px coral;
+    margin: 0 auto 10px auto;
+    padding: 0 2px;
+    color: red;
+    font-size: 10px;
+    font-family: cursive;
+    max-width: 300px;
+    height: 11px;
+    position: absolute;
+    top: calc(60%);
+    right: 12px;
+    animation: popup 1s linear forwards;
+
+    text-align: right;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    line-height: 14px;
+}
+
+.Errortxt .Err {
+    display: none;
+    float: right;
+}
+
+.Errortxt:hover span {
+    display: block;
+    float: left;
+    padding: 0 2px;
+    animation: popup 400ms linear forwards;
+}
+
+.Show_error {
+    padding-left: 4px;
+}
+
+@keyframes popup {
+    0% {
+        display: none;
+    }
+
+    20% {
+        display: block;
+        transform: scale(0);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#year,
+#day,
+#month,
+#BloodGroup {
+    padding: 0 4px!important;
+    outline: dodgerblue;
+    border: 1px solid dodgerblue;
+    color: #4e555b;
+}
+#BloodGroup{
+    font-size: 14px;
+}
+#BloodGroup:hover{
+    transition: 200ms;
+}
+

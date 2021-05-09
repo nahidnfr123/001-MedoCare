@@ -1,0 +1,353 @@
+
+
+/* Profile page banner */
+.Section_Profile {
+    height: auto;
+    width: 100%;
+    clear:both;
+    transform: translateY(60px);
+}
+
+.Section_Profile .Banner {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 6px;
+    position: relative;
+}
+
+
+.ProfilePicBox {
+    height: 160px;
+    width: 160px;
+    background-color: white;
+    position: relative;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+#my_profile_picture{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.Section_Profile .Banner .ProfilePicBox .UploadProfilePhotofrm {
+    transform: translate(70%, -130%);
+}
+
+.UploadProfilePhotofrm {
+    width: 100%;
+    transition: 200ms;
+}
+
+.UploadProfilePhotofrm button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: 200ms;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    background-color: #eee;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.UploadCoverPhotoForm {
+    position: absolute;
+    bottom: 20px;
+    right: 2%;
+}
+
+.ProfileName {
+    margin: 30px 0 0 230px;
+}
+
+@media screen and (max-width: 1000px) {
+    .Section_Profile .Banner {
+        width: 100%;
+    }
+
+    .Section_Profile .Banner .ProfilePicBox {
+        height: 140px;
+        width: 140px;
+        position: absolute;
+        top: -70px;
+    }
+
+    .ProfileName {
+        margin: 10px 0 0 200px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Section_Profile .Banner {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .Section_Profile .Banner .ProfilePicBox {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: -50px;
+    }
+
+    .ProfileName {
+        margin: 10px 0 0 140px;
+    }
+
+    .UploadProfilePhotofrm button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* End of Banner */
+
+
+
+
+
+
+
+
+/* Profile section part-2 */
+.Section_Profile_2 {
+    margin: 120px auto 0 auto;
+    width: 80%;
+}
+
+.Section_Profile_2 .Nav {
+    height: 50px;
+    width: 100%;
+    background-color: #eee;
+    text-align: center;
+}
+
+.Section_Profile_2 .Nav .Ul {
+    display: flex;
+    line-height: 50px;
+    margin: auto;
+}
+
+.Section_Profile_2 .Nav .Ul li {
+    list-style: none;
+}
+
+.Section_Profile_2 .Nav .Ul li a {
+    display: block;
+    padding: 0 20px;
+    background-color: #eee;
+    color: #333;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, .2);
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 0 2px;
+    transition: 200ms;
+    font-weight: 600;
+}
+
+.Section_Profile_2 .Nav .Ul li a:hover {
+    background-color: #aaa;
+    color: #111;
+}
+
+/*Profile navigation ..*/
+.Nav .tabs li a.active {
+    transition: 200ms;
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+.Nav .tabs li a.active:hover {
+    background-color: dodgerblue;
+    color: #222;
+}
+
+.Content {
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+}
+
+
+.Content p {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .Section_Profile_2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Section_Profile_2 .Nav{
+        width: 100%;
+    }
+    .Section_Profile_2 .Nav .Ul li a {
+        width: 140px;
+    }
+
+    .Section_Profile_2 .Nav .Ul {
+        width: calc(140px * 4);
+        display: flex;
+        line-height: 50px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Section_Profile_2 .Nav {
+        height: 40px;
+        width: 100%;
+    }
+
+    .Section_Profile_2 .Nav .Ul {
+        width: auto;
+        display: flex;
+        line-height: 40px;
+        margin: auto;
+    }
+
+    .Section_Profile_2 .Nav .Ul li a {
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 10px;
+    }
+
+    .Section_Profile_2 .Nav .Ul {
+        width: calc(100px * 4);
+        display: flex;
+        line-height: 50px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+.upload_formDiv {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.upload_formDiv.ShowFrm {
+    display: block;
+    animation: _Fadein_ 800ms cubic-bezier(1, .59, 0, 1);
+}
+
+.upload_form {
+    height: auto;
+    width: 280px;
+    background-color: #cccccc;
+    padding: 40px 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0 0 800px rgba(0, 0, 0, 1);
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: all 200ms;
+}
+
+
+.upload_form input[type="text"],
+.upload_form input[type="file"] {
+    width: 100%;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    border-bottom: 2px solid #666666;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.upload_form input[type="text"]:focus,
+.upload_form input[type="file"]:focus {
+    outline: none;
+}
+
+.upload_form button {
+    margin: auto;
+    width: 100%;
+    background-color: #666;
+}
+
+
+
+@-webkit-keyframes _Fadein_ {
+    0% {
+        opacity: 0;
+        transform-origin: center;
+        transform: scale(0);
+    }
+
+    80% {
+        opacity: .2;
+        transform-origin: center;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform-origin: center;
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+.User_50 {
+    height: 50px;
+    width: 50px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 1);
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+.Div_Slider_Container{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+.SlideDiv{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    border-radius: 6px;
+    display: block;
+}
+.SlideDiv.active{
+    height: auto;
+    width: 100%;
+    background-color: #efefff!important;
+    box-shadow: inset 0 0 10px rgba(0,0,0,.1);
+    display: block;
+}
