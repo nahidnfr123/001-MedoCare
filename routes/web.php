@@ -62,7 +62,6 @@ Route::group(['as'=>'admin.', 'prefix'=>'admin', 'namespace'=>'Admin', 'middlewa
         $Count_Msg = count(\App\ContactUs::where('seen', '=', '0')->get());
         $Msg = \App\ContactUs::orderBy('created_at', 'DESC')->take(3)->get();
         $view->with('Count_Msg', $Count_Msg)->with('Msg', $Msg);
-
     });
 
     Route::get('/', 'RouteController@index')->name('dashboard');

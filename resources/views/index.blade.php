@@ -46,8 +46,8 @@
                     <div><strong>password:</strong> farjana_alom@gmail.com</div>
                     <hr>
                     <div><strong>Patient</strong></div>
-                    <div><strong>Email:</strong> admin_user@gmail.com</div>
-                    <div><strong>password:</strong> admin_user@gmail.com</div>
+                    <div><strong>Email:</strong> bikash123@gmail.com</div>
+                    <div><strong>password:</strong> bikash123@gmail.com</div>
 
                 </div>
                 <div class="modal-footer">
