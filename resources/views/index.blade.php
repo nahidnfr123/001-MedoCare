@@ -10,11 +10,11 @@
 
 
     <!-- Modal Component -->
-    <div class="modal fade bd-example-modal-xl projectInfoModal" tabindex="-1" role="dialog"
+    <div class="modal fade bd-example-modal-lg projectInfoModal" tabindex="-1" role="dialog"
          aria-labelledby="myLargeModalLabel"
          aria-hidden="true"
          id="projectInfoModal">
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Laravel 6* project demo. (2019)</h5>
