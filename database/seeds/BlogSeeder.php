@@ -15,7 +15,7 @@ class BlogSeeder extends Seeder
     {
         Blog::insert([
             'title' => 'British Heart Foundationâ€™s Â£30 Million Big Beat Challenge.',
-            'image' => '/storage/image/blog/British Heart Foundationâ€™s Â£30 Million Big Beat Challenge-1568709175.jpg',
+            'image' => '/storage/app/public/image/blog/British Heart Foundationâ€™s Â£30 Million Big Beat Challenge-1568709175.jpg',
             'description' => '<p>The British Heart Foundation (BHF) has recently launched a new single &pound;30 million research award:&nbsp;<a href="http://www.bhf.org.uk/bigbeatchallenge">&lsquo;The Big Beat Challenge&rsquo;</a>. This challenge aims to fund &ldquo;the world&rsquo;s greatest minds tackling the world&rsquo;s biggest killers&rdquo;.</p>
 
 <p>The BHF is already the largest independent charity funder of cardiovascular research in the U.K, and is hoping with this substantial award to fund research that creates big change and accelerates real progress.</p>
@@ -39,7 +39,7 @@ class BlogSeeder extends Seeder
 
         Blog::insert([
             'title' => 'Drug Research And Development (JDRD).',
-            'image' => '/storage/image/blog/Drug Research And Development (JDRD)-1568709380.jpg',
+            'image' => '/storage/app/public/image/blog/Drug Research And Development (JDRD)-1568709380.jpg',
             'description' => '<p><strong>The Journal of Drug Research and Development (JDRD)</strong>&nbsp;presents up-to-date coverage of advanced drug systems and their innovative service to human health. Furthermore, it brings the latest developments in fast-paced areas such as new drug approvals, covering all aspects of theory, research and application of different disciplines about the effects of drugs on Preclinical and Clinical Pharmacology, drug discovery and design.</p>
 
 <p>The Editorial Committee actively pursues to be a leading source of vital knowledge by promoting excellence in the analysis of the molecules and pathways that fail or are destabilised during a dominant disorder and the interaction of these with chemical compounds and biologics. Moreover, it promotes discoveries that are anticipated to have the first impact on medication based therapeutics. Finally, it pursues the analysis and the opportune adaptation of that science to the needs of the drug discovery process.</p>
@@ -53,7 +53,7 @@ class BlogSeeder extends Seeder
 
         Blog::insert([
             'title' => 'Impact Of Climate And Climate Change On Vector-borne Diseases.',
-            'image' => '/storage/image/blog/Impact Of Climate And Climate Change On Vector-borne Diseases.-1568720248.jpg',
+            'image' => '/storage/app/public/image/blog/Impact Of Climate And Climate Change On Vector-borne Diseases.-1568720248.jpg',
             'description' => '<p><strong>Vector-Borne Diseases (VBDs)</strong>&nbsp;such as malaria, yellow fever, Lyme disease, plague, dengue, and leishmaniasis kill 700,000 people globally each year. Currently, the burden of VBDs is mostly found under tropical and warm climates that allow transmission all year long. This may change as our planet warms.&nbsp;<a href="https://idpjournal.biomedcentral.com/articles/10.1186/s40249-019-0565-1">Florence Fouque and her colleagues</a>&nbsp;examine the impact of climate change on vector-borne diseases.</p>
 
 <p>Vector-Borne Diseases (VBDs) are so called because they are not communicable directly between humans but through arthropod vectors, and all together they account for about&nbsp;<a href="https://www.who.int/vector-control/publications/global-control-response/en/">17% of infectious diseases</a>.</p>
@@ -71,7 +71,7 @@ class BlogSeeder extends Seeder
 
         Blog::insert([
             'title' => 'What Are The Signs Of A Heart Attack?',
-            'image' => '/storage/image/blog/What Are The Signs Of A Heart Attack--1568721192.jpg',
+            'image' => '/storage/app/public/image/blog/What Are The Signs Of A Heart Attack--1568721192.jpg',
             'description' => '<p><strong>Signs Of A Heart Attack May Differ In Men and Women</strong><br />
 It&acirc;&euro;&trade;s critical to recognize that signs of a heart attack may differ in women. In addition to the typical symptom of chest pain a heart attack; women experience other atypical symptoms more frequently than men. This has led to many disparities in care over the years and there is now a strong movement to educate both healthcare providers and patients to be vigilant to this. Whereas men may more frequently experience chest pain as a sign of a heart attack, women may experience back pain, jaw pain, neck pain, nausea, shortness of breath, palpitations, indigestion, dizziness, and passing out.</p>
 
@@ -106,7 +106,7 @@ Although the classic presentation of a heart attack is chest pain and pressure, 
 
         Blog::insert([
             'title' => 'Eye Disease.',
-            'image' => '/storage/image/blog/Eye Disease--1568721281.jpg',
+            'image' => '/storage/app/public/image/blog/Eye Disease--1568721281.jpg',
             'description' => '<p><strong>Conjunctivitis (Pink Eye)</strong></p>
 
 <p>Conjunctivitis, also known as pink eye, is an infection or inflammation of the conjunctiva &acirc;&euro;&ldquo; the thin, protective membrane that covers the surface of the eyeball and inner surface of the eyelids. Caused by bacteria, viruses, allergens and other irritants like smoke and dust, pink eye is highly contagious and is usually accompanied by redness in the white of the eye and increased tearing and/or discharge.</p>
@@ -132,7 +132,7 @@ Although the classic presentation of a heart attack is chest pain and pressure, 
 
         Blog::insert([
             'title' => 'Stroke: What You Need To Know.',
-            'image' => '/storage/image/blog/Stroke- What You Need To Know--1568721545.gif',
+            'image' => '/storage/app/public/image/blog/Stroke- What You Need To Know--1568721545.gif',
             'description' => '<h2>What is a stroke?</h2>
 
 <p>A<a href="https://www.nhlbi.nih.gov/health-topics/stroke">&nbsp;stroke is a medical emergency</a>. It is similar to a heart attack for the brain. It occurs when the flow of blood to the brain is interrupted, resulting in oxygen starvation to the brain cells which can no longer perform their task whether it is memory, vision or muscle control. The severity of the stroke depends on where the stroke occurs in the brain and how much damage there is. A small stroke can cause a transient and mild weakness of the right hand like in this example where a small area of blurring between the cortex and the white matter on the left side of his brain as displayed on this non-enhanced CT image.</p>
@@ -176,7 +176,7 @@ Although the classic presentation of a heart attack is chest pain and pressure, 
 
         Blog::insert([
             'title' => 'Nahid Ferdous',
-            'image' => '/storage/image/blog/Nahid Ferdous-1568721584.jpg',
+            'image' => '/storage/app/public/image/blog/Nahid Ferdous-1568721584.jpg',
             'description' => '<p>Wi-Fi can provide you with added coverage in places where cell networks don&#39;t always work - like basements and apartments. No roaming fees for Wi-Fi connections also means you stay connected while travelling the world.</p>
 
 <p>Wi-Fi can provide you with added coverage in places where cell networks don&#39;t always work - like basements and apartments. No roaming fees for Wi-Fi connections also means you stay connected while travelling the world.</p>

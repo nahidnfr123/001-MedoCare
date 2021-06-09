@@ -27,7 +27,7 @@ class UserSeeder extends Seeder
             'dob'=> '1996-08-21',
             'phone'=> '01857823870',
             'gender'=> 'male',
-            'avatar'=> '/storage/user_data/admin/Admin.gif',
+            'avatar'=> '/storage/app/public/user_data/admin/Admin.gif',
             'blood_group'=> 'B+',
             'location' => $Location,
             'address' => 'Kalabagan, Dhaka 1205',
