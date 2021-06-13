@@ -6,23 +6,36 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'MedoCare.com') . ' / ' }} @yield('title', config('app.name', 'MedoCare.com'))</title>
+    <title>@yield('title', 'Demo') | {{ config('app.name', 'MedoCare.com')}} | Nahid Ferdous</title>
+
+
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Hey there, I am Nahid Ferodus. This is a project demondtration demo. It is an online medical service, built using laravel-6, JQuery, Ajax, etc.">
+    <meta name="description" content="Hey there, I am Nahid Ferodus. This is a project demondtration demo. It is an online medical service, built using laravel-6, JQuery, Ajax, etc.">
+    <meta data-n-head="ssr" data-hid="og:description" name="og:description" property="og:description" content="Hey there, I am Nahid Ferodus. This is a project demondtration demo. It is an online medical service, built using laravel-6, JQuery, Ajax, etc.">
+    <meta name="keywords" content="Nahid Ferdous, nahid, nahid_ferdous, nahid ferdous, Nahid, Ferdous, Nahidnfr, nfr, NFR, web, web development, designer, developer, bangladesh, art, design, laravel, vue js, vuejs, vue.js, php, laravel developer, project demo, project demonstration">
+    <meta name="author" content="Nahid Ferdous">
+
+    <meta data-n-head="ssr" data-hid="charset" charset="utf-8">
+    <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+    <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="nahid ferdous">
+    <meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website">
+    <meta data-n-head="ssr" data-hid="og:title" name="og:title" property="og:title" content="Nahid Ferdous! Project demonstration MedoCare.">
+    <meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" property="og:site_name" content="Nahid Ferdous">
+
 
     <link rel="icon" href="#">
+    <link rel="icon" href="/storage/image/web_layout/MedocareMini.png">
 
-    <link
-        href="//fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Poppins&family=Quicksand&display=swap"
-        rel="stylesheet" defer>
+    <link href="//fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Poppins&family=Quicksand&display=swap" rel="stylesheet">
 
     <link href="{{ asset('main.css') }}" rel="stylesheet">
-    <link href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" defer>
+    <link href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('asset_front/css/form.css') }}">
     <link rel="stylesheet" href="{{ asset('asset_front/slider_asset/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('asset_front/slider_asset/mm.css') }}">
 
-    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="{{ asset('asset_front/css/join_us_form.css') }}">
     <link rel="stylesheet" href="{{ asset('asset_front/css/chatbox.css') }}">
@@ -32,11 +45,8 @@
     <link href="{{ asset('sweet_alert/sweet_alert.css') }}" rel="stylesheet">
 
     <!--JS CDN Link files-->
-    <script src="//code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="col-12 text-center bg-dark text-white text-bold" style="font-size:12px;"> Laravel 6.* Project Demo (Online
@@ -373,8 +383,7 @@
 <script src="{{ asset('asset_front/slider_asset/active.js') }}" defer></script>
 
 <!--owl carousel for slider ....-->
-<script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer
-        crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer crossorigin="anonymous"></script>
 
 <script defer>
     window.addEventListener("load", function () {

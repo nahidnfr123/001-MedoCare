@@ -9,6 +9,21 @@
 
     <link rel="icon" href="/storage/image/web_layout/MedocareMini.png">
 
+
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Hey there, I am Nahid Ferodus. This is a project demondtration demo. It is an online medical service, built using laravel-6, JQuery, Ajax, etc.">
+    <meta name="description" content="Hey there, I am Nahid Ferodus. This is a project demondtration demo. It is an online medical service, built using laravel-6, JQuery, Ajax, etc.">
+    <meta data-n-head="ssr" data-hid="og:description" name="og:description" property="og:description" content="Hey there, I am Nahid Ferodus. This is a project demondtration demo. It is an online medical service, built using laravel-6, JQuery, Ajax, etc.">
+    <meta name="keywords" content="Nahid Ferdous, nahid, nahid_ferdous, nahid ferdous, Nahid, Ferdous, Nahidnfr, nfr, NFR, web, web development, designer, developer, bangladesh, art, design, laravel, vue js, vuejs, vue.js, php, laravel developer, project demo, project demonstration">
+    <meta name="author" content="Nahid Ferdous">
+
+    <meta data-n-head="ssr" data-hid="charset" charset="utf-8">
+    <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+    <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="nahid ferdous">
+    <meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website">
+    <meta data-n-head="ssr" data-hid="og:title" name="og:title" property="og:title" content="Nahid Ferdous! Project demonstration MedoCare.">
+    <meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" property="og:site_name" content="Nahid Ferdous">
+
+
     <link href="{{ asset('asset_back/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('asset_back/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
 
