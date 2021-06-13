@@ -42,7 +42,7 @@ class ReportController extends Controller
 
             $Location = '/public/user_data/patient/report/';
             $get_image->storeAs($Location, $newFileName); // set the storage path ...
-            $StorageLink = '/storage/user_data/patient/report/' . $newFileName;
+            $StorageLink = $this->domain_image_url().'/storage/user_data/patient/report/' . $newFileName;
         }
 
         PatientReport::Insert([

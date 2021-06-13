@@ -156,7 +156,7 @@ class JoinUsController extends Controller
             $newFileName = $Full_name . '-' . time() . '.' . $extension; // Ste the file name to store in the database ....
             $ImgLocation = '/public/user_data/doctor/';
             $get_image->storeAs($ImgLocation, $newFileName); // set the storage path ...
-            $StorageLink = '/storage/user_data/doctor/' . $newFileName;
+            $StorageLink = $this->domain_image_url().'/storage/user_data/doctor/' . $newFileName;
         }
 
         // Check doctor document ...
@@ -173,7 +173,7 @@ class JoinUsController extends Controller
             $newFileName = $Full_name . '-' . time() . '.' . $extension; // Ste the file name to store in the database ....
             $fileLocation = '/public/user_data/doctor/document/';
             $get_image->storeAs($fileLocation, $newFileName); // set the storage path ...
-            $StorageLink2 = '/storage/user_data/doctor/document/' . $newFileName;
+            $StorageLink2 = $this->domain_image_url().'/storage/user_data/doctor/document/' . $newFileName;
         }
 
         if ($request->has('auto_locate')) {

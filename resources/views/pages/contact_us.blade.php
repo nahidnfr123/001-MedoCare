@@ -13,7 +13,7 @@
 
             <div class="Banner">
                 <div class="filter_color"></div>
-                <img data-src="storage/image/web_layout/banner/contact-us-banner.jpg" alt="">
+                <img data-src="{{ config('app.image_url', null) }}/storage/image/web_layout/banner/contact-us-banner.jpg" alt="">
                 <h1 class="Banner_Text">
                     <a href="{{ route('home') }}" class="ban_Link"><i class="fas fa-home"></i> Home </a> / {{ $title }}
                 </h1>

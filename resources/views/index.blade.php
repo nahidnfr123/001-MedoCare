@@ -67,7 +67,7 @@
 
             <!-- Single Slide -->
             <div class="single-welcome-slide bg-img bg-overlay"
-                 style="background-image: url(/storage/image/web_layout/bg/1.jpg);">
+                 style="background-image: url({{ config('app.image_url', null) }}/storage/image/web_layout/bg/1.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <!-- Welcome Text -->
@@ -90,7 +90,7 @@
 
             <!-- Single Slide -->
             <div class="single-welcome-slide bg-img bg-overlay"
-                 style="background-image: url(/storage/image/web_layout/bg/2.jpg);">
+                 style="background-image: url({{ config('app.image_url', null) }}/storage/image/web_layout/bg/2.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <!-- Welcome Text -->
@@ -112,7 +112,7 @@
 
             <!-- Single Slide -->
             <div class="single-welcome-slide bg-img bg-overlay"
-                 style="background-image: url(/storage/image/web_layout/bg/3.jpg);">
+                 style="background-image: url({{ config('app.image_url', null) }}/storage/image/web_layout/bg/3.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <!-- Welcome Text -->
@@ -429,7 +429,7 @@
                                         <div class="our-departments-cont">
                                             <header class="entry-header d-flex flex-wrap align-items-center">
                                                 <img
-                                                    data-src="{{ '/storage/image/web_layout/icon/'.$Department->icon }}"
+                                                    data-src="{{ config('app.image_url', null).'/storage/image/web_layout/icon/'.$Department->icon }}"
                                                     alt="" height="30px">
                                                 <h3 style="color: #1a2d41;">{{ $Department->department_name }}</h3>
                                             </header>

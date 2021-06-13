@@ -11,7 +11,7 @@
     <div id="MainContent">
         <div class="Banner">
             <div class="filter_color"></div>
-            <img data-src="storage/image/web_layout/banner/department.jpg" alt="">
+            <img data-src="{{ config('app.image_url', null) }}/storage/image/web_layout/banner/department.jpg" alt="">
             <h1 class="Banner_Text">
                 <a href="{{ route('home') }}" class="ban_Link"><i class="fas fa-home"></i> Home </a> / {{ $title }}
             </h1>
@@ -33,7 +33,7 @@
                                         <div class="col-12 col-md-6 col-lg-4 hover_Effect_department wow fadeInDown" style="border-radius: 6px;">
                                             <div class="our-departments-cont">
                                                 <header class="entry-header d-flex flex-wrap align-items-center">
-                                                    <img data-src="{{ '/storage/image/web_layout/icon/'.$Department->icon }}" alt="" height="30px">
+                                                    <img data-src="{{ config('app.image_url', null) }}{{ '/storage/image/web_layout/icon/'.$Department->icon }}" alt="" height="30px">
                                                     <h3 style="color: #1a2d41;">{{ $Department->department_name }}</h3>
                                                 </header>
 
@@ -45,7 +45,7 @@
                                                         $stringCut = substr($string, 0, 100);
                                                         $endPoint = strrpos($stringCut, ' ');
                                                         //if the string doesn't contain any space then it will cut without word basis.
-                                                        $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+                                                        $string = $endPoint ? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
                                                         $string .= '... ';
                                                     }
                                                     ?>
@@ -69,7 +69,6 @@
             </div>
         </div>
         <!-- End Departments -->
-
 
 
     </div>

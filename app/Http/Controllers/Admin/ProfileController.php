@@ -100,7 +100,7 @@ class ProfileController extends Controller
             $newFileName = Auth::user()->first_name . '-' . time() . '.' . $extension; // Ste the file name to store in the database ....
             $Location = '/public/image/blog/';
             $get_image->storeAs($Location, $newFileName); // set the storage path ...
-            $StorageLink = '/storage/image/blog/' . $newFileName;
+            $StorageLink = $this->domain_image_url().'/storage/image/blog/' . $newFileName;
         }
         else {
             $StorageLink = Auth::user()->avatar;

@@ -393,13 +393,13 @@ class ManageUserController extends Controller
 
         // set default profile image ... //
         if($request->gender == 'male'){
-            $avatar = '/storage/user_data/admin/male_default.png';
+            $avatar = $this->domain_image_url().'/storage/user_data/admin/male_default.png';
         }
         elseif($request->gender == 'female'){
-            $avatar = '/storage/user_data/admin/female_default.png';
+            $avatar = $this->domain_image_url().'/storage/user_data/admin/female_default.png';
         }
         else{
-            $avatar = '/storage/user_data/admin/avatar_default.png';
+            $avatar = $this->domain_image_url().'/storage/user_data/admin/avatar_default.png';
         }
 
         $User = User::create([

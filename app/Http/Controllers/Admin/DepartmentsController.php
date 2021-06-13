@@ -137,7 +137,7 @@ class DepartmentsController extends Controller
         $department_id = $request->department_id;
         $Department = Department::findOrFail($department_id);
         $Name = $Department->department_name;
-        $Image = '/storage/image/web_layout/icon/'.$Department->icon;
+        $Image = $this->domain_image_url().'/storage/image/web_layout/icon/'.$Department->icon;
         $Details = $Department->details;
 
         return response()->json(array('Id' => $department_id , 'Name' => $Name, 'Icon' =>$Image, 'Details' => $Details), 200);

@@ -111,13 +111,13 @@ class RegisterController extends Controller
     {
         // set default profile image ... //
         if($data['gender'] == 'male'){
-            $avatar = '/storage/user_data/profile/male_default.png';
+            $avatar = $this->domain_image_url().'/storage/user_data/profile/male_default.png';
         }
         elseif($data['gender'] == 'female'){
-            $avatar = '/storage/user_data/profile/female_default.png';
+            $avatar = $this->domain_image_url().'/storage/user_data/profile/female_default.png';
         }
         else{
-            $avatar = '/storage/user_data/profile/avatar_default.png';
+            $avatar = $this->domain_image_url().'/storage/user_data/profile/avatar_default.png';
         }
 
         /*if($data['User_Type'] == 'Patient'){

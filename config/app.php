@@ -55,6 +55,7 @@ return [
     'url' => env('APP_URL', 'https://project001.nahidnfr.com/'),
 
     'asset_url' => env('ASSET_URL', null),
+    'image_url' => env('IMAGE_URL', null),
 
     /*
     |--------------------------------------------------------------------------

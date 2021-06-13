@@ -120,7 +120,7 @@
         <header class="Top_Header" id="Header">
             <div class="LogoDiv">
                 <a href="{{ route('home') }}" title="Home Page">
-                    <img data-src="/storage/image/web_layout/Medocare.png" alt="MedoCare">
+                    <img data-src="{{ config('app.image_url', null) }}/storage/image/web_layout/Medocare.png" alt="MedoCare">
                 </a>
             </div>
 

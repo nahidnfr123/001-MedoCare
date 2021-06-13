@@ -14,17 +14,22 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function decryptID($id){
-        try{
+    public function decryptID($id)
+    {
+        try {
             $id = decrypt($id);
             return $id;
-        }
-        catch (Exception $e) {
+        } catch (Exception $e) {
             //return $e->getMessage();
             //redirect('404');
             abort(403, 'Unauthorized action.');
         }
     }
 
+
+    public function domain_image_url()
+    {
+        return config('app.image_url', null);
+    }
 
 }

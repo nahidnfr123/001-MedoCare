@@ -135,12 +135,12 @@ class ProfileController extends Controller
             if(Auth::user()->role()->pluck('name')->first() == 'Patient'){
                 $Location = '/public/user_data/patient/';
                 $get_image->storeAs($Location, $newFileName); // set the storage path ...
-                $StorageLink = '/storage/user_data/patient/' . $newFileName;
+                $StorageLink = $this->domain_image_url().'/storage/user_data/patient/' . $newFileName;
             }
             elseif(Auth::user()->role()->pluck('name')->first() == 'Doctor'){
                 $Location = '/public/user_data/doctor/';
                 $get_image->storeAs($Location, $newFileName); // set the storage path ...
-                $StorageLink = '/storage/user_data/doctor/' . $newFileName;
+                $StorageLink = $this->domain_image_url().'/storage/user_data/doctor/' . $newFileName;
             }
         }
 
