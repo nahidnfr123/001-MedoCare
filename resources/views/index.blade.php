@@ -25,9 +25,10 @@
                 <div class="modal-body">
                     <div>
                         <h5>About:</h5>
-                        <div>MedoCare is and online medical service which allows patients
-                            to find doctors and book appointments easily for online
-                            consultation through a online chat based ststem.
+                        <div>
+                            MedoCare is an online medical service that allows patients to find
+                            doctors and book appointments easily for online consultation through
+                            an online chat-based system.
                         </div>
                     </div>
                     <p><strong>Technologies: </strong>HTML, CSS, BOOTSTRAP, JQuery, Ajax, Laravel 6*</p>
@@ -37,10 +38,10 @@
                     <hr>
 
                     <h5>Credentials:</h5>
-                    <div><strong>Admin</strong></div>
+                    {{--<div><strong>Admin</strong></div>
                     <div><strong>Email:</strong> admin_user@gmail.com</div>
                     <div><strong>password:</strong> admin_user@gmail.com</div>
-                    <hr>
+                    <hr>--}}
                     <div><strong>Doctor</strong></div>
                     <div><strong>Email:</strong> farjana_alom@gmail.com</div>
                     <div><strong>password:</strong> farjana_alom@gmail.com</div>
